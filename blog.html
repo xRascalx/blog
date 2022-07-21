@@ -111,15 +111,128 @@
 
                 <!-- 讚賞 -->
                 <div class="ui center aligned basic segment">
-                    <button class="ui orange basic circular button">讚賞</button>
+                    <button id="payButton" class="ui orange basic circular button">讚賞</button>
+                </div>
+                <div class="ui payQR flowing popup transition hidden">
+                    <div class="ui orange basic label">
+                        <div class="ui images" style="font-size: inherit !important;">
+                            <div class="image">
+                                <img src="./static/images/line.jpg" alt="" class="ui rounded bordered image"
+                                    style="width:120px">
+                                <div>手機支付</div>
+                            </div>
+                            <div class="image">
+                                <img src="./static/images/line.jpg" alt="" class="ui rounded bordered image"
+                                    style="width:100px">
+                                <div>LinePay支付</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
-            <div class="ui attached positive message">訊息
+            <div class="ui attached positive message">
                 <!-- 訊息 -->
+                <div class="ui middle aligned grid">
+                    <div class="eleven wide column">
+                        <ui class="list">
+                            <li>作者: Henry (聯繫作者)</li>
+                            <li>發表時間: 2022-07-21</li>
+                        </ui>
+                    </div>
+                    <div class="five wide column">
+                        <img src="./static/images/line.jpg" alt="" class="ui right floated rounded brodered image"
+                            style="width: 110px;">
+                    </div>
+                </div>
             </div>
             <div class="ui bottom attached segment">留言區域
-                <!-- 留言區域 -->
+                <!-- 留言區域列表 -->
+                <div class="ui teal segment">
+                    <div class="ui form">
+                        <div class="ui comments">
+                            <h3 class="ui dividing header">Comments</h3>
+                            <div class="comment">
+                                <a class="avatar">
+                                    <img src="https://unsplash.it/800/450?image=1005">
+                                </a>
+                                <div class="content">
+                                    <a class="author">Matt</a>
+                                    <div class="metadata">
+                                        <span class="date">Today at 5:42PM</span>
+                                    </div>
+                                    <div class="text">
+                                        How artistic!
+                                    </div>
+                                    <div class="actions">
+                                        <a class="reply">回復</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <a class="avatar">
+                                    <img src="https://unsplash.it/800/450?image=1005">
+                                </a>
+                                <div class="content">
+                                    <a class="author">Elliot Fu</a>
+                                    <div class="metadata">
+                                        <span class="date">Yesterday at 12:30AM</span>
+                                    </div>
+                                    <div class="text">
+                                        <p>This has been very useful for my research. Thanks as well!</p>
+                                    </div>
+                                    <div class="actions">
+                                        <a class="reply">回復</a>
+                                    </div>
+                                </div>
+                                <div class="comments">
+                                    <div class="comment">
+                                        <a class="avatar">
+                                            <img src="https://unsplash.it/800/450?image=1005">
+                                        </a>
+                                        <div class="content">
+                                            <a class="author">Jenny Hess</a>
+                                            <div class="metadata">
+                                                <span class="date">Just now</span>
+                                            </div>
+                                            <div class="text">
+                                                Elliot you are always so right :)
+                                            </div>
+                                            <div class="actions">
+                                                <a class="reply">回復</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <a class="avatar">
+                                    <img src="https://unsplash.it/800/450?image=1005">
+                                </a>
+                                <div class="content">
+                                    <a class="author">Joe Henderson</a>
+                                    <div class="metadata">
+                                        <span class="date">5 days ago</span>
+                                    </div>
+                                    <div class="text">
+                                        Dude, this is awesome. Thanks so much
+                                    </div>
+                                    <div class="actions">
+                                        <a class="reply">回復</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui form">
+                        <div class="field">
+                            <textarea name="content" placeholder="請輸入評論訊息..."></textarea>
+                        </div>
+                        <div class="fields">
+                            <input type="text" name="" placeholder="姓名">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -169,6 +282,12 @@
     <script>
         $('.menu.toggle').click(function () {
             $('.m-item').toggleClass('m-mobile-hide');
+        });
+
+        $('#payButton').popup({
+            popup: $('.payQR.popup'),
+            on: 'click',
+            position: 'bottom center'
         });
     </script>
 

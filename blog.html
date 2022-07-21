@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="./static/css/me.css">
+</head>
+
+<body>
+    <!--導航-->
+    <nav class="ui inverted attached segment m-padded-tb-mini">
+        <div class="ui container">
+            <div class="ui inverted secondary stackable menu">
+                <h5 class="ui teal header item">Blog</h5>
+                <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>首頁</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>分類</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>標籤</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="clone icon"></i>歸檔</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="info icon"></i>關於我</a>
+                <div class="right m-item item m-mobile-hide">
+                    <div class="ui icon inverted transparent input">
+                        <input type="text" placeholder="Search...">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+    <!--中間內容-->
+    <div class="m-container-small m-padded-tb-large">
+        <div class="ui container">
+            <div class="ui top attached segment">
+                <!-- 頭部 -->
+                <div class="ui horizontal link list">
+                    <div class="item">
+                        <img src="https://unsplash.it/100/100?image=1005" alt="" class="ui avatar image">
+                        <div class="content"><a href="#" class="header">Henry</a></div>
+                    </div>
+                    <div class="item">
+                        <i class="calendar icon"></i> 2022-07-20
+                    </div>
+                    <div class="item">
+                        <i class="eye icon"></i> 2342
+                    </div>
+                </div>
+            </div>
+            <div class="ui attached segment">
+                <!-- 圖片區域 -->
+                <img src="https://unsplash.it/800/450?image=1005" alt="" class="ui fluid rounded image">
+            </div>
+            <div class="ui attached padded segment">
+                <!-- 內容 -->
+                <div class="ui right aligned basic segment">
+                    <div class="ui orange basic label">原創</div>
+                </div>
+
+                <h2 class="ui center aligned header">需要練習的清單</h2>
+                <br>
+                <div id="content" class="m-padded-lr padded">
+                    <h2>List</h2>
+                    <p>在Java中，必须导入 java.util.List 包才能使用List。
+
+                        //List 的ArrayList 实现
+                        List<String> list1 = new ArrayList<>();
+
+                                // List 的LinkedList 实现
+                                List<String> list2 = new LinkedList<>();
+                                        在这里，我们已经创建ArrayList和LinkedList类的对象list1和list2。现在这些对象可以使用List接口的功能。
+                    </p>
+                    <h2>List方法</h2>
+                    <p>List接口包括Collection接口的所有方法。 这是因为Collection是List的超级接口。
+
+                        Collection接口中还提供了一些常用的List接口方法：
+
+                        add() - 将元素添加到列表
+
+                        addAll() - 将一个列表的所有元素添加到另一个
+
+                        get() - 有助于从列表中随机访问元素
+
+                        iterator() - 返回迭代器对象，该对象可用于顺序访问列表的元素
+
+                        set() - 更改列表的元素
+
+                        remove() - 从列表中删除一个元素
+
+                        removeAll() - 从列表中删除所有元素
+
+                        clear() - 从列表中删除所有元素（比removeAll()效率更高）
+
+                        size() - 返回列表的长度
+
+                        toArray() - 将列表转换为数组
+
+                        contains() - 如果列表包含指定的元素，则返回true</p>
+
+                </div>
+
+                <br>
+                <!-- 標籤 -->
+                <div class="m-padded-lr">
+                    <div class="ui basic teal left pointing label">方法論</div>
+                </div>
+
+                <!-- 讚賞 -->
+                <div class="ui center aligned basic segment">
+                    <button class="ui orange basic circular button">讚賞</button>
+                </div>
+
+            </div>
+            <div class="ui attached positive message">訊息
+                <!-- 訊息 -->
+            </div>
+            <div class="ui bottom attached segment">留言區域
+                <!-- 留言區域 -->
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!--底部-->
+    <footer class="ui inverted vertical segment m-padded-tb-massive">
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <div class="ui inverted link list">
+                        <div class="item">
+                            <img src="./static/images/line.jpg" calss="ui rounded image" alt="" style="width:110px">
+                        </div>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">最新</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">test</a>
+                        <a href="#" class="item">test</a>
+                        <a href="#" class="item">test</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">聯繫我</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Email: jk00242004@gmail.com</a>
+                        <a href="#" class="item">Line: waitingka</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">Lirenmi</h4>
+                    <p class="m-opacity-mini">程式編譯、寫作</p>
+                </div>
+
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2022 - 2022 Lirenmi Designed by Lirenmi
+            </p>
+        </div>
+    </footer>
+
+    <script>src = "https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"</script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+    <script>
+        $('.menu.toggle').click(function () {
+            $('.m-item').toggleClass('m-mobile-hide');
+        });
+    </script>
+
+</body>
+
+</html>

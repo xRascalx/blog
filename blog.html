@@ -63,7 +63,7 @@
 
                 <h2 class="ui center aligned header">需要練習的清單</h2>
                 <br>
-                <div id="content" class="m-padded-lr padded">
+                <div id="content" class="m-padded-lr-responsive padded">
                     <h2>List</h2>
                     <p>在Java中，必须导入 java.util.List 包才能使用List。
 
@@ -105,7 +105,7 @@
 
                 <br>
                 <!-- 標籤 -->
-                <div class="m-padded-lr">
+                <div class="m-padded-lr-responsive">
                     <div class="ui basic teal left pointing label">方法論</div>
                 </div>
 
@@ -229,8 +229,23 @@
                             <textarea name="content" placeholder="請輸入評論訊息..."></textarea>
                         </div>
                         <div class="fields">
-                            <input type="text" name="" placeholder="姓名">
+                            <div class="field m-mobile-wide m-margin-bottom-small">
+                                <div class="ui left icon input">
+                                    <i class="user icon"></i>
+                                    <input type="text" name="nickname" placeholder="姓名">
+                                </div>
+                            </div>
+                            <div class="field m-mobile-wide m-margin-bottom-small">
+                                <div class="ui left icon input">
+                                    <i class="mail icon"></i>
+                                    <input type="text" name="email" placeholder="信箱">
+                                </div>
+                            </div>
+                            <div class="field m-margin-bottom-small m-mobile-wide">
+                                <button class="ui teal button m-mobile-wide"><i class="edit icon"></i>發布</button>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
